@@ -36,7 +36,7 @@ body, err := ioutil.ReadAll(req.Body)
     }
 
  u := User{
-        Greeting:  "Hello," + t.Name,
+        Greeting:  "Hello," + t.Name+"!",
         }
         
        // users = append(users, u)
