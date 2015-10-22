@@ -57,7 +57,7 @@ func send(w http.ResponseWriter, code int, val interface{}) error {
 func main() {
     router := httprouter.New()
     router.GET("/hello/:name", Hello)
-    router.POST("/users", create) 
+    router.POST("/hello", create) 
   
     server := http.Server{
             Addr:        "0.0.0.0:8080",
